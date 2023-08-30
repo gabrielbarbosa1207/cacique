@@ -27,7 +27,7 @@ document.querySelector('a').addEventListener('click', function(event) {
             button.style.pointerEvents = "auto"; // Make it clickable again
 
             // Clear the values in the spans
-            document.getElementById('normal').innerText = "";
+            document.getElementById('normal').innerText = "--.";
             document.getElementById('turbo').innerText = "";
             document.getElementById('validade').innerText = "";
         } else {
