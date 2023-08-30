@@ -1,36 +1,38 @@
-document.querySelector("a").addEventListener("click", function(event) {
-    event.preventDefault(); // prevent the default action (navigation) of the link
+document.querySelector('a').addEventListener('click', function(event) {
+    event.preventDefault();
 
-    // Disable the button and change its appearance
-    const button = event.target;
+    // Generate the values for the spans
+    document.getElementById('normal').innerText = Math.floor(Math.random() * (45 - 5 + 1) + 5) + "X";
+    document.getElementById('turbo').innerText = Math.floor(Math.random() * (45 - 5 + 1) + 5) + "X";
+
+    const currentDate = new Date();
+    currentDate.setMinutes(currentDate.getMinutes() + 5);
+    let timeString = currentDate.getHours().toString().padStart(2, '0') + ':' + currentDate.getMinutes().toString().padStart(2, '0');
+    document.getElementById('validade').innerText = timeString;
+
+    // Handle the button countdown
+    let button = event.currentTarget;
+    button.innerText = "Aguarde 30s..";
     button.style.backgroundColor = "gray";
-    button.textContent = "aguarde 30s...";
-    button.removeEventListener("click", arguments.callee);  // Remove the click event listener
+    button.style.pointerEvents = "none"; // Make it unclickable
 
-    // Generate random number between 5 and 45, then append "X" to it
-    let normalValue = Math.floor(Math.random() * (35 - 5 + 1) + 5) + "X";
-    let turboValue = Math.floor(Math.random() * (25 - 5 + 1) + 5) + "X";
-
-    // Generate the current time and add 5 minutes
-    let date = new Date();
-    date.setMinutes(date.getMinutes() + 5);
-    let validadeValue = date.getHours().toString().padStart(2, '0') + ":" + date.getMinutes().toString().padStart(2, '0');
-
-    // Set the generated values to the spans
-    document.getElementById("normal").textContent = normalValue;
-    document.getElementById("turbo").textContent = turboValue;
-    document.getElementById("validade").textContent = validadeValue;
-
-    // Start the countdown
     let counter = 30;
-    const interval = setInterval(function() {
-        counter--;
-        button.textContent = "Aguarde " + counter + "s...";
-        if (counter <= 0) {
+
+    let interval = setInterval(function() {
+        if(counter <= 0) {
             clearInterval(interval);
+
+            button.innerText = "GERAR NOVO SINAL";
             button.style.backgroundColor = "green";
-            button.textContent = "GERAR NOVO SINAL";
-            button.addEventListener("click", arguments.callee);  // Re-add the click event listener
+            button.style.pointerEvents = "auto"; // Make it clickable again
+
+            // Clear the values in the spans
+            document.getElementById('normal').innerText = "";
+            document.getElementById('turbo').innerText = "";
+            document.getElementById('validade').innerText = "";
+        } else {
+            button.innerText = `Aguarde ${counter}s..`;
+            counter--;
         }
-    }, 1000);  // This function will be executed every second
+    }, 1000);
 });
