@@ -5,6 +5,7 @@
         overflow-x: hidden;
         text-align: center;
         font-family: sans-serif;
+        background-color: black;
     }
 
     img{
@@ -97,6 +98,15 @@
         color: white;
         display: block;   /* Convert a tag into block to apply width correctly */
         text-align: center; /* Center the text within the anchor */
+    }
+
+    #anchor{
+        border: 1px solid #FF8200;;
+        border-radius: 15px;
+        background-color: #FF8200;;
+        color:white;
+        animation: 1s pulse infinite;
+        font-weight: 700;
     }
     
 
