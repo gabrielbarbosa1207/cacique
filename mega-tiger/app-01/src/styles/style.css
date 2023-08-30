@@ -102,11 +102,24 @@
 
     #anchor{
         border: 1px solid #FF8200;;
+        border-radius: 7px;
+        background-color: #FF8200;;
+        color:white;
+        animation: 1s pulse infinite;
+        font-weight: 600;
+        font-size: 13px;
+        padding: 7px 15px;
+    }
+
+    #anchor-div{
+        position: relative;
+        border: 1px solid #FF8200;;
         border-radius: 15px;
         background-color: #FF8200;;
         color:white;
         animation: 1s pulse infinite;
         font-weight: 700;
+        margin:  5px 0px;
     }
     
 
