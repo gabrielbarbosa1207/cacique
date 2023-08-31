@@ -4,6 +4,10 @@ html,body{
     padding: 30px auto 0px auto;
     background: linear-gradient(to bottom, #000000, #4A94FD);
     background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 img{
@@ -67,9 +71,13 @@ table{
 
 iframe{
     height: 580px;
-    width: 100%;
+    width: 80%;
     display: block;
     margin: 35px auto 35px auto;
+}
+
+p{
+  text-align: center;
 }
 
 
