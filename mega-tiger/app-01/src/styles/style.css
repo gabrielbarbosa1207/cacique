@@ -5,7 +5,7 @@
         overflow-x: hidden;
         text-align: center;
         font-family: sans-serif;
-        background-color: black;
+        background-color: black !important;
     }
 
     img{
@@ -120,6 +120,12 @@
         animation: 1s pulse infinite;
         font-weight: 700;
         margin:  5px 0px;
+    }
+
+    h2{
+        color: white;
+        font-weight: 700;
+        line-height: 24px;
     }
     
 
