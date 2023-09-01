@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import ProgressBar from './components/ProgressBar';
+import StepContent from './components/StepContent/StepContent';
 
 function App() {
+  const [activeStep, setActiveStep] = useState(0);
+
+  const handleNextStep = () => {
+    if (activeStep < 3) {
+      setActiveStep((prevStep) => prevStep + 1);
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProgressBar activeStep={activeStep} />
+      <StepContent activeStep={activeStep} />
+      <button onClick={handleNextStep}>Next</button>
     </div>
   );
 }
