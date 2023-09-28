@@ -1,12 +1,16 @@
 @media screen and (max-width:500px){
     html,body{
         margin: 0px;
-        padding: 5px 8px;
+        padding:0px 3px;
         overflow-x: hidden;
         text-align: center;
         font-family: sans-serif;
-        background-color: black;
-    }
+        /* background-color: red; */
+        background-color: red;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+        }
 
     img{
         display: block;
@@ -21,7 +25,8 @@
     }
 
     #sec01 {
-        background-image: url("https://www.amaempreender.com.br/HackerTiger7k/images/backgroundpo.jpg");
+        background-image: url("../assets/imgs/bg-new.webp");
+        background-repeat: no-repeat;
         background-size: cover;
         background-size: 100% 100%;
         height: 550px;
@@ -48,21 +53,22 @@
         list-style-type: none; /* Remove default bullets. */
         padding: 0; /* Remove default padding. */
         width: 100%; /* Take full width of the container. You can adjust as necessary. */
-        margin-top: 60px;
+        margin-top: 230px;
     }
     
     #sec01 li {
         /* Optional styles for list items. Adjust as required. */
-        padding: 30px; /* Give a little padding to each list item. */
+        padding: 10px; /* Give a little padding to each list item. */
         display: flex;
         flex-direction: row;
         border: 1px solid #9d2525;
         border-radius: 4px;
         padding: 7px;
-        width: 79%;
-        margin: 5px 0px 0px 30px;
+        width: 65%;
+        margin: auto auto;
         color: #9d2525;
         font-family: 600;
+
     }
 
     img{
@@ -90,20 +96,34 @@
     }
     
     a {
-        background-color: green;
+        background-image: linear-gradient(to right, #005f00 0%, #007a00 51%, #009500 100%);
+        border: none;
+        border-radius: 5px;
         padding: 15px;
-        width: 78%;       /* Set width to 90% */
-        margin: 0 auto;   /* Center it horizontally */
+        width: 78%;
+        margin: 0 auto;
         text-decoration: none;
         color: white;
-        display: block;   /* Convert a tag into block to apply width correctly */
-        text-align: center; /* Center the text within the anchor */
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        background-size: 300% 100%;
+        animation: GradientMovement 2s infinite;
     }
+        
+    @keyframes GradientMovement {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+    
+    
 
     #anchor{
         border: 1px solid #FF8200;;
         border-radius: 7px;
-        background-color: #FF8200;;
+        background-color: #FF8200 !important;
+        background-image: none;
         color:white;
         animation: 1s pulse infinite;
         font-weight: 600;
@@ -136,6 +156,11 @@
         padding:178.21782178217822% 0 0 0;position:relative;
     }
 
+    #tutorial{
+        width:200px;
+        margin: 15px auto;
+    }
+
 
 }
 
@@ -163,7 +188,7 @@
         overflow-x: hidden;
         text-align: center;
         font-family: sans-serif;
-        background-color: green;
+        background-color: red;
     }
 
     header, footer{
@@ -183,7 +208,7 @@
     }
 
     #sec01 {
-        background-image: url("https://www.amaempreender.com.br/HackerTiger7k/images/backgroundpo.jpg");
+        background-image: url("../assets/imgs/bg-new.webp");
         background-size: cover;
         height: 665px;
         width: 490px;  /* Set the width to 680px */
@@ -212,8 +237,8 @@
         gap:20px; /* Distribute items evenly in the container. */
         list-style-type: none; /* Remove default bullets. */
         padding: 0; /* Remove default padding. */
-        width: 100%; /* Take full width of the container. You can adjust as necessary. */
-        margin-top: 60px;
+        width: 85%; /* Take full width of the container. You can adjust as necessary. */
+        margin-top: 300px;
     }
     
     #sec01 li {
@@ -248,30 +273,42 @@
     }
     
     #sec01 div { /* This is the div wrapping your anchor tag */
-        margin-top: auto;  /* This pushes the div to the bottom */
+        margin-top: 30px;
         width: 100%;       /* Ensure it spans the full width of its parent */
         display: flex;     /* Make it a flex container */
         justify-content: center; /* Center children horizontally */
     }
-    
-    a {
-        background-color: green;
-        padding: 15px;
-        width: 78%;       /* Set width to 90% */
-        margin: 0 auto;   /* Center it horizontally */
-        text-decoration: none;
-        color: white;
-        display: block;   /* Convert a tag into block to apply width correctly */
-        text-align: center; /* Center the text within the anchor */
-    }
-    
-    /* .iframe{
-        width: 350px;
+
+    .button-div{
+        margin-top: px;
     }
 
-    .iframe{
-        position:absolute;top:0;left:0;width:60%;height:60%;
-    } */
+    .div{
+        margin-top: 100px;
+    }
+    
+    .signal {
+        background-image: linear-gradient(to right, #005f00 0%, #007a00 51%, #009500 100%);
+        border: none;
+        border-radius: 5px;
+        padding: 15px;
+        width: 78%;
+        margin: 30px auto 0px auto;
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        background-size: 300% 100%;
+        animation: GradientMovement 2s infinite;
+    }
+        
+    @keyframes GradientMovement {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+    
 
     #ifr_64efe4dd909f89000a8fda73{
         width: 20%;
@@ -295,22 +332,18 @@
     }
 
     #anchor{
-        border: 1px solid #FF8200;;
-        border-radius: 7px;
-        background-color: #FF8200;;
+        text-decoration: none;
         color:white;
-        animation: 1s pulse infinite;
-        font-weight: 600;
-        font-size: 13px;
-        padding: 15px 15px;
-        width: 25%;
-        box-shadow: 0px 0px 5px #FF8200;
     }
+
+
 
     #anchor-div{
         position: relative;
         border: 1px solid #FF8200;;
         border-radius: 15px;
+        padding: 10px;
+        text-decoration: none;
         background-color: #FF8200;;
         color:white;
         animation: 1s pulse infinite;
@@ -324,7 +357,7 @@
         width: 55%;
         margin: auto;
         display: block;
-        background-color: #013220;
+        /* background-color: #013220; */
         font-size: 24px;
     }
 
