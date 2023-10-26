@@ -1,0 +1,15 @@
+[
+    {
+      "image": "path-to-image1.jpg",
+      "text": "Text for image 1"
+    },
+    {
+      "image": "path-to-image2.jpg",
+      "text": "Text for image 2"
+    },
+    {
+      "image": "path-to-image3.jpg",
+      "text": "Text for image 3"
+    }
+  ]
+  
