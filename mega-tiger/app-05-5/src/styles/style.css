@@ -57,13 +57,12 @@
     
     #sec01 li {
         /* Optional styles for list items. Adjust as required. */
-        padding: 10px; /* Give a little padding to each list item. */
         display: flex;
         flex-direction: row;
         border: 1px solid #9d2525;
         border-radius: 4px;
-        padding: 7px;
-        width: 65%;
+        padding: 2px;
+        width: 53%;
         margin: auto auto;
         color: #9d2525;
         font-family: 600;
@@ -98,8 +97,8 @@
         background-image: linear-gradient(to right, #005f00 0%, #007a00 51%, #009500 100%);
         border: none;
         border-radius: 5px;
-        padding: 15px;
-        width: 78%;
+        padding: 19px;
+        width: 75%;
         margin: 0 auto;
         text-decoration: none;
         color: white;
