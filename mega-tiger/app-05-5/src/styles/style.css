@@ -247,8 +247,8 @@
         border: 1px solid #9d2525;
         border-radius: 4px;
         padding: 7px;
-        width: 79%;
-        margin: 5px 0px 0px 30px;
+        width: 61%;
+        margin: 5px 0px 0px 70px;
         color: #9d2525;
         font-family: 600;
     }
@@ -285,13 +285,13 @@
         margin-top: 100px;
     }
     
-    .signal {
+    #sinal {
         background-image: linear-gradient(to right, #005f00 0%, #007a00 51%, #009500 100%);
         border: none;
         border-radius: 5px;
-        padding: 15px;
+        padding: 10px;
         width: 78%;
-        margin: 30px auto 0px auto;
+        margin: 18px auto 0px auto;
         text-decoration: none;
         color: white;
         display: block;
@@ -357,6 +357,11 @@
         display: block;
         /* background-color: #013220; */
         font-size: 24px;
+    }
+
+    #video{
+        text-decoration: none;
+        color: white;
     }
 
 
